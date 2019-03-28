@@ -6,7 +6,7 @@ module.exports = (function () {
 
   callHandler = new Handler('call', handleCall, smsHandler);
 
-  function handleCall(sms) {
+  function handleCall(call) {
     console.log('Call placed to number', call.number, ' from number:', call.ownNumber);
   }
   return callHandler;

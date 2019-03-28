@@ -18,11 +18,14 @@ module.exports = (function () {
       };
       email = {
         type: 'email',
-        recipient: '0123872992',
+        recipient: 'lolo@kik.kk',
         message: 'Hey to me'
       };
 
       handler = new Handler(null, null, callHandler);
+      handler.handleCommunication(email);
+      handler.handleCommunication(sms);
+      handler.handleCommunication(call);
     }
   };
 })();

@@ -6,7 +6,7 @@ module.exports = (function () {
     this.nextHandler = nextHandler;
   };
 
-  CommunicationHandler.prototype.handleRequest = function (communication) {
+  CommunicationHandler.prototype.handleCommunication = function (communication) {
     if(communication.type !== this.communicationType) {
       (this.nextHandler)
         ? this.nextHandler.handleCommunication(communication)

@@ -4,7 +4,7 @@ module.exports = (function () {
       emailHandler = require('./email'),
       smsHandler;
 
-  smsHandler = new Handler('email', handleSms, emailHandler);
+  smsHandler = new Handler('sms', handleSms, emailHandler);
 
   function handleSms(sms) {
     console.log('Sms sent to', sms.number, ', message:', sms.message);
