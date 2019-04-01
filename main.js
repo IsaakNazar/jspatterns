@@ -6,6 +6,9 @@
       observer = require("./js/observer/init"),
       cor = require("./js/cor/init"),
       iterator = require("./js/iterator/init");
+      cor = require("./js/cor/init"),
+      mediator = require("./js/mediator/init"),
+      facade = require("./js/facade/init");
 
   const examples = {
     factory,
@@ -14,12 +17,18 @@
     observer,
     cor,
     iterator
+    cor,
+    mediator,
+    facade
   };
   // console.log(examples.factory.init());
   // console.log(examples.pubsub.init());
   // console.log(examples.strategy.init());
   // console.log(examples.observer.init());
  // console.log(examples.cor.init());
-  console.log(examples.iterator.init());
+ //  console.log(examples.iterator.init());
+  //console.log(examples.cor.init());
+  // console.log(examples.mediator.init());
+  console.log(examples.facade.init());
 
 })();
