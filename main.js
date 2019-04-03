@@ -7,7 +7,11 @@
       iterator = require("./js/iterator/init"),
       cor = require("./js/cor/init"),
       mediator = require("./js/mediator/init"),
-      facade = require("./js/facade/init");
+      facade = require("./js/facade/init"),
+      decorator = require("./js/decorator/init"),
+      adapter = require("./js/adapter/init"),
+      composite = require("./js/composite/init"),
+      proxy = require("./js/proxy/init");
 
   const examples = {
     factory,
@@ -17,7 +21,11 @@
     cor,
     iterator,
     mediator,
-    facade
+    facade,
+    decorator,
+    adapter,
+    composite,
+    proxy
   };
   // console.log(examples.factory.init());
   // console.log(examples.pubsub.init());
@@ -26,6 +34,10 @@
   // console.log(examples.iterator.init());
   // console.log(examples.cor.init());
   // console.log(examples.mediator.init());
-  console.log(examples.facade.init());
+  // console.log(examples.facade.init());
+  // console.log(examples.decorator.init());
+  // console.log(examples.adapter.init());
+  // console.log(examples.composite.init());
+  console.log(examples.proxy.init());
 
 })();
